@@ -1,37 +1,35 @@
 /* css variables */
 
 :root {
-    --header-bg-color: #111111;
-    --header-font-color: #ffffff;
-    --main-font-color: #333333;
-    --link-color: #ffffff;
-    --link-hover-bg-color: #999999;
+    --header-bg-color: #13856c;
+    --header-font-color: #ffff79;
+    --main-font-color: #7e8fd8;
+    --link-color: #7aff7a;
+    --link-hover-bg-color: #034a3a;
 }
 
 * {
     box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-kerning: auto;
+    color: var(--main-font-color);
 }
 
 html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
+
 
 /* add padding to all elment with class starts with 'col-' */
 
