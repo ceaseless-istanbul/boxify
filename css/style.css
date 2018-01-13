@@ -16,17 +16,14 @@
     font-kerning: auto;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-    color: var(--main-font-color);
-}
-
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
+    font-family: 'Lato', sans-serif;
+    color: var(--main-font-color);
     margin: 0;
 }
 
