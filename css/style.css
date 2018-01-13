@@ -1,0 +1,181 @@
+/* css variables */
+
+:root {
+    --header-bg-color: #111111;
+    --header-font-color: #ffffff;
+    --main-font-color: #333333;
+    --link-color: #ffffff;
+    --link-hover-bg-color: #999999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* add padding to all elment with class starts with 'col-' */
+
+[class^=col-] {
+    padding: 0 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.row-middle {
+    align-items: center;
+}
+
+.col-1 {
+    width: 8.333333%;
+    max-width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+    max-width: 16.666666%;
+}
+
+.col-3 {
+    width: 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666666%;
+    max-width: 41.666666%;
+}
+
+.col-6 {
+    width: 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666666%;
+    max-width: 66.666666%;
+}
+
+.col-9 {
+    width: 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666666%;
+    max-width: 91.666666%;
+}
+
+.col-12 {
+    width: 100%;
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* website style */
+
+.website-title {
+    text-align: right;
+}
+
+.card {
+    text-align: center;
+    /* padding: 0; */
+}
+
+
+/* menu */
+
+nav {
+    background: var(--header-bg-color);
+    height: 80px;
+    color: var(--header-font-color);
+    margin-bottom: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: var(--link-color);
+    font-size: 1.2em;
+    padding: 0 1em;
+    line-height: 80px;
+    display: block;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus {
+    background-color: var(--link-hover-bg-color);
+}
+
+nav ul ul {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    margin: 0;
+}
+
+nav li:hover ul,
+nav li:hover li,
+nav a:focus~ul,
+nav a:focus~li {
+    display: block;
+    background: var(--header-bg-color);
+}
